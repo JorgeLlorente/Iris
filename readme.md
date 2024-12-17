@@ -2,7 +2,7 @@
 
 ## Descripción del proyecto
 
-Usando el dataset de Iris, utilizo la librería scikit-learn para entrenar un modelo de regresión logística y asegurarme de que el modelo escogido es el más optímo, tratando de extraer de la **"black box"** el mayor número de insights posibles.
+Usando el dataset de Iris, utilizo la librería **scikit-learn** para entrenar un modelo de regresión logística y asegurarme de que el modelo escogido es el más optímo, tratando de extraer de la **"black box"** el mayor número de insights posibles usando la librería **shap**.
 
 ## Proceso del proyecto
 ### Entrenamiento del modelo
@@ -21,12 +21,12 @@ Usando este hiperparámetro comprobamos con cross_validate cómo se comporta el 
 
 Una vez asumido que el modelo generaliza para otros conjuntos de datos podemos realizar las predicciones en un conjunto de datos no visto por el modelo obteniendo las siguientes métricas:
 
-<image src="/imagestest_metrics.png" alt="Validation Curve">
+<image src="/images/test_metrics.png" alt="Validation Curve">
 
 Por último, podemos observar la precisión del modelo con la matriz de confusión:
 
 <image src="/images/confusion_matrix.png" alt="Validation Curve">
 
-### Explicabilidad
+### Interpretabilidad
 
 Finalmente, vamos a utilizar la librería shap para poder explicar lo que está sucediendo en estas predicciones.
