@@ -21,7 +21,7 @@ Usando este hiperparámetro comprobamos con cross_validate cómo se comporta el 
 
 Una vez asumido que el modelo generaliza para otros conjuntos de datos podemos realizar las predicciones en un conjunto de datos no visto por el modelo obteniendo las siguientes métricas:
 
-<image src="//imagestest_metrics.png" alt="Validation Curve">
+<image src="/imagestest_metrics.png" alt="Validation Curve">
 
 Por último, podemos observar la precisión del modelo con la matriz de confusión:
 
@@ -29,4 +29,4 @@ Por último, podemos observar la precisión del modelo con la matriz de confusi�
 
 ### Explicabilidad
 
-Finalmente, utilizamos la técnica PDP e ICEP para visualizar cómo influyen las características en la predicción del modelo.
+Finalmente, vamos a utilizar la librería shap para poder explicar lo que está sucediendo en estas predicciones.
